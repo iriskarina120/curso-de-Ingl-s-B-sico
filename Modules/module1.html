@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="es">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../style/styles.css">  
+    <title>Módulo: Saludos y Despedidas</title>  
+</head>  
+<body>  
+    <header>  
+        <h1>Módulo: Saludos y Despedidas</h1>  
+        <p>¡Aprende cómo saludar y despedirte en inglés!</p>  
+    </header>  
+
+    <main>  
+        <div class="progress-bar">  
+            <div id="progress" class="progress" style="width: 0%;">0%</div>  
+        </div>  
+
+        <section id="contenido">  
+            <h2>  
+                Contenido del Módulo   
+                <span class="toggle-arrow">▼</span>  
+            </h2>  
+            <div class="content-details">  
+                <p>En este módulo aprenderás los saludos y despedidas más comunes en inglés. También practicarás algunas frases clave a través de juegos y actividades interactivas.</p>  
+            </div>  
+        </section>  
+
+        <section id="actividades">  
+            <h2>Actividades <span class="toggle-arrow">▼</span></h2>  
+            <section id="actividades">  
+                <h2>Actividades <span class="toggle-arrow">▼</span></h2>  
+                <div class="activity-details">  
+                    <ul>  
+                        <li>  
+                            <a href="activity1.html" class="link-actividad">Ejercicio de conversación</a>  
+                            <button class="check-button" data-activity="activity1" onclick="markAsDone('activity1')">✔️</button>  
+                        </li>  
+                        <li>  
+                            <a href="activity2.html" class="link-actividad">Juego de palabras</a>  
+                            <button class="check-button" data-activity="activity2" onclick="markAsDone('activity2')">✔️</button>  
+                        </li>  
+                        <li>  
+                            <a href="activity3.html" class="link-actividad">Prueba de vocabulario</a>  
+                            <button class="check-button" data-activity="activity3" onclick="markAsDone('activity3')">✔️</button>  
+                        </li>  
+                    </ul>  
+                </div>  
+            </section>  
+        </section>  
+
+        <section id="juegos">  
+            <h2>Juegos <span class="toggle-arrow">▼</span></h2>  
+            <div class="game-details">  
+                <ul>  
+                    <li>  
+                        <a href="game1.html" class="link-juego">Juego de memoria de saludos</a>  
+                        <button class="check-button" onclick="markAsDone('game1')">✔️</button>  
+                    </li>  
+                    <li>  
+                        <a href="game2.html" class="link-juego">Adivina el saludo</a>  
+                        <button class="check-button" onclick="markAsDone('game2')">✔️</button>  
+                    </li>  
+                </ul>  
+            </div>  
+        </section>  
+
+        <section id="prueba-final">  
+            <h2>Prueba Final <span class="toggle-arrow">▼</span></h2>  
+            <div class="test-details">  
+                <p>Al finalizar este módulo, realiza esta prueba para comprobar tus conocimientos.</p>  
+                <a href="final-test.html" class="link-actividad">Acceder a la Prueba Final</a>  
+            </div>  
+        </section>  
+
+        <section id="materiales-complementarios">  
+            <h2>Materiales Complementarios <span class="toggle-arrow">▼</span></h2>  
+            <div class="resources-details">  
+                <ul>  
+                    <li><a href="https://link1.com" target="_blank">Recurso 1: Aprende los saludos</a></li>  
+                    <li><a href="https://link2.com" target="_blank">Recurso 2: Ejercicios de práctica</a></li>  
+                    <li><a href="https://link3.com" target="_blank">Recurso 3: Videos sobre saludos</a></li>  
+                </ul>  
+            </div>  
+        </section>  
+
+        <button id="resetButton">Reiniciar Progreso</button>  
+        <button id="backButton">Volver a los Módulos</button>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2025 Aventura Lingüística. ¡Diviértete aprendiendo!</p>  
+    </footer>  
+
+    <script src="../scripts/moduls.js"></script>  
+</body>  
+</html>  

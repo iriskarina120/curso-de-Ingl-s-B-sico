@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Adventures of Luna the Space Explorer</title>
+    <link rel="stylesheet" href="../style/book.css">
+</head>
+
+<body>
+    <div class="book-container">
+        <div class="book" id="book">
+            <div class="page page-left" id="cover" onclick="openBook()">
+                <div class="text">Click to Open</div>
+            </div>
+            <div class="page page-right hidden" id="page1-right">
+                <img src="https://via.placeholder.com/500" alt="Illustration 1">
+                <audio id="audio1" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                <div class="text">Once upon a time, in a faraway galaxy, there was a brave little astronaut named Luna.
+                    She loved exploring new planets and making new friends.</div>
+                <div class="corner" onclick="turnPage('page1-right', 'page2-left', 'page2-right', 'audio1')"></div>
+            </div>
+            <div class="page page-left hidden" id="page2-left">
+                <img src="https://via.placeholder.com/500" alt="Illustration 2">
+                <audio id="audio2" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+                <div class="text">One day, Luna landed on a planet called Zog. The planet was full of colorful, talking
+                    plants that welcomed her with open leaves.</div>
+                <div class="corner" onclick="turnPage('page2-left', 'page3-right', 'audio2')"></div>
+            </div>
+            <div class="page page-right hidden" id="page3-right">
+                <img src="https://via.placeholder.com/500" alt="Illustration 3">
+                <audio id="audio3" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+                <div class="text">Luna met a friendly plant named Zippy. Zippy showed Luna around and introduced her to
+                    all the other plants.</div>
+                <div class="corner" onclick="turnPage('page3-right', 'page4-left', 'audio3')"></div>
+            </div>
+            <div class="page page-left hidden" id="page4-left">
+                <img src="https://via.placeholder.com/500" alt="Illustration 4">
+                <audio id="audio4" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"></audio>
+                <div class="text">While exploring, Luna discovered a hidden cave. Inside the cave, she found glowing
+                    crystals that lit up the entire cavern.</div>
+                <div class="corner" onclick="turnPage('page4-left', 'page5-right', 'audio4')"></div>
+            </div>
+            <div class="page page-right hidden" id="page5-right">
+                <img src="https://via.placeholder.com/500" alt="Illustration 5">
+                <audio id="audio5" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"></audio>
+                <div class="text">Luna and Zippy decided to collect some crystals and take them back to Luna's
+                    spaceship. The crystals would help her power her spaceship for future adventures.</div>
+                <div class="corner" onclick="turnPage('page5-right', 'page6-left', 'audio5')"></div>
+            </div>
+            <div class="page page-left hidden" id="page6-left">
+                <img src="https://via.placeholder.com/500" alt="Illustration 6">
+                <audio id="audio6" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"></audio>
+                <div class="text">Before leaving, Luna thanked all the plants for their hospitality and promised to
+                    visit again. She waved goodbye as she flew off into space, ready for her next adventure.</div>
+                <div class="corner" onclick="closeBook()"></div>
+            </div>
+            <div class="page page-right hidden" id="back-cover">
+                <div class="text">The End</div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/book.js"></script>
+</body>
+
+</html>

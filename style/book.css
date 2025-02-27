@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    perspective: 1500px;
+}
+
+.book {
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.page {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.page img {
+    max-width: 90%;
+    max-height: 60%;
+}
+
+.text {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.page-left {
+    left: 0;
+    transform-origin: left;
+    transform: rotateY(0deg);
+}
+
+.page-right {
+    right: 0;
+    transform-origin: right;
+    transform: rotateY(-180deg);
+}
+
+.hidden {
+    display: none;
+}
+
+.corner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: radial-gradient(circle at center, transparent 50%, #999 51%);
+}
+
+.corner:hover {
+    cursor: pointer;
+}
